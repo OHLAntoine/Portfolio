@@ -1,0 +1,19 @@
+/* Reset & Generals */
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+:root {
+    --dark_blue- : rgba(1, 1, 49, 1);
+    --middle_blue- : rgba(105, 173, 245, 1);
+    --light_blue- : rgba(89, 191, 255, 1);
+    --grey- : rgba(191, 195, 186, 1);
+    --white- : rgba(248, 248, 248, 1);
+}
+
+body {
+    background-color: var(--dark_blue-);
+}
