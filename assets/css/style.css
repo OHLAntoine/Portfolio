@@ -14,6 +14,40 @@
     --white- : rgba(248, 248, 248, 1);
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--middle_blue-);
+}
+
 body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark_blue-);
+    height: 100vh;
+}
+
+/* Menu */
+
+.navbar_text {
+    color: var(--light_blue-);
+    font-weight: 700;
+}
+
+.brand_title {
+    font-size: x-large;
+}
+
+.navbar_text:hover {
+    color: var(--middle_blue-);
+}
+
+.menu_toggle {
+    color: var(--light_blue-);
+    font-size: xx-large;
+}
+
+.navbar-toggler {
+    border-color: var(--dark_blue-);
+}
+
+.offcanvas_menu {
     background-color: var(--dark_blue-);
 }
