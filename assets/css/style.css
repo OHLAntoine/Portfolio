@@ -15,7 +15,11 @@
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: var(--middle_blue-);
+    color: var(--light_blue-);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,10 +28,45 @@ body {
     height: 100vh;
 }
 
+/* Text Color */
+
+.text_light-blue {
+    color: var(--light_blue-);
+}
+
+.text_middle-blue {
+    color: var(--light_blue-);
+}
+
+.text_dark-blue {
+    color: var(--dark_blue-);
+}
+
+.text_grey {
+    color: var(--grey-);
+}
+
+.text_white {
+    color: var(--white-);
+}
+
+/* Buttons */
+
+.btn_blue {
+    color: var(--light_blue-);
+    border: var(--light_blue-) solid 1px;
+    background: linear-gradient(90deg, var(--dark_blue-) 0% 50%, var(--light_blue-) 50% 100%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: all linear 0.4s;
+}
+.btn_blue:hover {
+    background-position: right;
+}
+
 /* Menu */
 
 .navbar_text {
-    color: var(--light_blue-);
     font-weight: 700;
 }
 
@@ -36,11 +75,10 @@ body {
 }
 
 .navbar_text:hover {
-    color: var(--middle_blue-);
+    color: var(--light_blue-);
 }
 
 .menu_toggle {
-    color: var(--light_blue-);
     font-size: xx-large;
 }
 
@@ -50,4 +88,30 @@ body {
 
 .offcanvas_menu {
     background-color: var(--dark_blue-);
+}
+
+/* Main Content */
+
+.presentation_image {
+    border-radius: 15%;
+}
+
+.container_socials {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: var(--light_blue-) solid 1px;
+    color: var(--light_blue-);
+    background: linear-gradient(90deg, var(--light_blue-) 0% 50%, var(--dark_blue-) 50% 100%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: all linear 0.4s;
+}
+.container_socials:hover {
+    background-position: left;
+    color: var(--dark_blue-);
+}
+
+.socials_links {
+    font-size: xx-large;
 }

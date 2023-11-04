@@ -17,9 +17,9 @@
     <header class="container">
         <nav class="navbar navbar-expand-lg sticky-top" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
-                <a class="navbar-brand navbar_text brand_title" href="./index.html">Portfolio.</a>
+                <a class="navbar-brand navbar_text brand_title text_white" href="./index.html">Portfolio.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                    <i class="bi bi-list menu_toggle"></i>
+                    <i class="bi bi-list menu_toggle text_light-blue"></i>
                 </button>
                 <div class="offcanvas offcanvas-end offcanvas_menu" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                     <div class="offcanvas-header">
@@ -29,22 +29,22 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link navbar_text active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link navbar_text text_white active" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#">About</a>
+                                <a class="nav-link navbar_text text_white" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#">Education</a>
+                                <a class="nav-link navbar_text text_white" href="#education">Education</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#">Skills</a>
+                                <a class="nav-link navbar_text text_white" href="#skills">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#">Projects</a>
+                                <a class="nav-link navbar_text text_white" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link navbar_text" href="#">Contact</a>
+                                <a class="nav-link navbar_text text_white" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -53,17 +53,35 @@
             </nav>
     </header>
 
-    <section class="container"></section>
+    <section class="container" id="home">
+        <div class="row flex-lg-row-reverse flex-column align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assets/images/presentation-picture.png" class="d-block mx-lg-auto img-fluid presentation_image" alt="My presentation photo" width="500" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text_white mb-3">Hi, I'm Antoine OHL</h1>
+                <h4 class="fw-bold text_middle-blue mb-3">Full Stack Developer</h4>
+                <p class="lead text_white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis repudiandae distinctio in architecto esse saepe nam ullam voluptatibus dolorum excepturi quam voluptatem error, quas amet quidem asperiores quo totam placeat!</p>
+                <div class="d-grid gap-2 d-flex justify-content-start my-4">
+                    <a class="btn btn-lg px-4 btn_blue" href="mailto:antoine.ohl@gmail.com"><i class="bi bi-envelope me-2"></i>Hire me</a>
+                </div>
+                <div class="my-5 d-flex">
+                        <a href="https://www.linkedin.com/in/antoine-ohl-3274281bb/" target="_blank" class="container_socials d-flex justify-content-center align-items-center me-3"><i class="bi bi-linkedin socials_links"></i></a>
+                        <a href="https://github.com/OHLAntoine" target="_blank" class="container_socials ms-3 d-flex justify-content-center align-items-center"><i class="bi bi-github socials_links"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="container"></section>
+    <section class="container" id="about"></section>
 
-    <section class="container"></section>
+    <section class="container" id="education"></section>
 
-    <section class="container"></section>
+    <section class="container" id="skills"></section>
 
-    <section class="container"></section>
+    <section class="container" id="projects"></section>
 
-    <section class="container"></section>
+    <section class="container" id="contact"></section>
 
     <footer class="container"></footer>
 
