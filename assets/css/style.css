@@ -25,7 +25,6 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--dark_blue-);
-    height: 100vh;
 }
 
 /* Text Color */
@@ -138,7 +137,16 @@ body {
 
 .little-presentation_image {
     border-radius: 50%;
-    border: 5px solid var(--grey-);
+    border: 2px solid var(--light_blue-);
     object-fit: contain;
     object-position: top;
+}
+
+/* Education */
+
+.list-group-item {
+    background-color: var(--dark_blue-);
+}
+.list-group-item:hover {
+    background-color: rgba(248, 248, 248, 0.2);
 }
