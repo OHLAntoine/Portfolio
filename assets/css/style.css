@@ -52,7 +52,7 @@ body {
 
 /* Buttons */
 
-.btn_blue {
+.outline-btn_blue {
     color: var(--light_blue-);
     border: var(--light_blue-) solid 1px;
     background: linear-gradient(90deg, var(--dark_blue-) 0% 50%, var(--light_blue-) 50% 100%);
@@ -60,11 +60,29 @@ body {
     background-position: left;
     transition: all linear 0.4s;
 }
-.btn_blue:hover {
+.outline-btn_blue:hover {
     background-position: right;
 }
 
+.btn_blue {
+    color: var(--dark_blue-);
+    border: var(--light_blue-) solid 1px;
+    background: linear-gradient(90deg, var(--light_blue-) 0% 50%, var(--dark_blue-) 50% 100%);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: all linear 0.4s;
+}
+.btn_blue:hover {
+    background-position: right;
+    color: var(--light_blue-);
+    border: var(--light_blue-) solid 1px;
+}
+
 /* Menu */
+
+.navbar_header {
+    background-color: var(--dark_blue-);
+}
 
 .navbar_text {
     font-weight: 700;
@@ -114,4 +132,13 @@ body {
 
 .socials_links {
     font-size: xx-large;
+}
+
+/* About me */
+
+.little-presentation_image {
+    border-radius: 50%;
+    border: 5px solid var(--grey-);
+    object-fit: contain;
+    object-position: top;
 }
