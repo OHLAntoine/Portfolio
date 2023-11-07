@@ -155,6 +155,10 @@ body {
 
 /* Projects */
 
+.figure-img {
+    margin-bottom: 0;
+}
+
 .projects-figures {
     position: relative;
     overflow: hidden;
