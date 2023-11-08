@@ -133,6 +133,16 @@ body {
     font-size: xx-large;
 }
 
+@media (max-width: 576px) {
+    .my-presentation {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 /* About me */
 
 .little-presentation_image {
@@ -189,4 +199,10 @@ body {
 .form_field {
     border: 1px solid var(--light_blue-);
     padding: 0.5rem;
+}
+
+/* Footer */
+
+.links_footer:hover {
+    color: var(--light_blue-);
 }
