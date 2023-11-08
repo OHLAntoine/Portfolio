@@ -177,3 +177,16 @@ body {
 .projects-figures:hover .projects-captions {
     bottom: 0;
 }
+
+/* Contact */
+
+@media (min-width: 1200px) {
+    .contact_form {
+        width: 60%;
+    }
+}
+
+.form_field {
+    border: 1px solid var(--light_blue-);
+    padding: 0.5rem;
+}
