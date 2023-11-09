@@ -99,6 +99,10 @@ body {
     font-size: xx-large;
 }
 
+.menu_toggle:hover {
+    color: var(--light_blue-);
+}
+
 .navbar-toggler {
     border-color: var(--dark_blue-);
 }
