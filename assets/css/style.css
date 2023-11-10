@@ -8,7 +8,6 @@
 
 :root {
     --dark_blue- : rgba(1, 1, 49, 1);
-    /* --middle_blue- : rgba(105, 173, 245, 1); */
     --light_blue- : rgba(89, 191, 255, 1);
     --grey- : rgba(191, 195, 186, 1);
     --white- : rgba(248, 248, 248, 1);
@@ -20,6 +19,7 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 body {
@@ -79,6 +79,11 @@ body {
 
 /* Menu */
 
+header {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
 .navbar_header {
     background-color: var(--dark_blue-);
 }
@@ -113,8 +118,13 @@ body {
 
 /* Main Content */
 
+.home_content {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
 .presentation_image {
-    border-radius: 15%;
+    border-radius: 30% 70% 70% 30% / 51% 20% 80% 49%;
 }
 
 .container_socials {
@@ -149,6 +159,11 @@ body {
 
 /* About me */
 
+.about_content {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
 .little-presentation_image {
     border-radius: 50%;
     border: 2px solid var(--light_blue-);
@@ -157,6 +172,11 @@ body {
 }
 
 /* Education */
+
+.education_content {
+    opacity: 0;
+    transition: all 1s linear;
+}
 
 .list-group-item {
     background-color: var(--dark_blue-);
@@ -167,7 +187,17 @@ body {
 
 /* Skills */
 
+.skills_content {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
 /* Projects */
+
+.projects_content {
+    opacity: 0;
+    transition: all 1s linear;
+}
 
 .figure-img {
     margin-bottom: 0;
@@ -194,6 +224,11 @@ body {
 
 /* Contact */
 
+.contact_content {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
 @media (min-width: 1200px) {
     .contact_form {
         width: 60%;
@@ -207,6 +242,17 @@ body {
 
 /* Footer */
 
+.footer_content {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
 .links_footer:hover {
     color: var(--light_blue-);
+}
+
+/* Show content */
+
+.loaded {
+    opacity: 1;
 }
