@@ -316,7 +316,7 @@
         <div class="px-4 py-5">
             <h2 class="display-5 fw-bold text_white text-center mt-3 mb-5">Contact Me</h2>
             <div class="d-flex align-items-center justify-content-center">
-                <form action="" class="contact_form">
+                <form onsubmit="sendEmail(); reset(); return false;" class="contact_form">
                     <fieldset class="form_field row g-3">
                         <div class="col-12 col-md-6">
                             <label for="firstname" class="form-label text_light-blue">Firstname :</label>
@@ -367,6 +367,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./assets/scripts/index.js"></script>
 </body>
 </html>

@@ -116,3 +116,30 @@ function scrolling() {
             }
         }
     }
+
+// Envoi de mail
+function sendEmail(){
+    (function(){
+        emailjs.init("WJ3IcHoOqkApdz1Zq");
+    })();
+
+    let params = {
+        firstname: document.querySelector('#firstname').value,
+        lastname: document.querySelector('#lastname').value,
+        email: document.querySelector('#email').value,
+        subject: document.querySelector('#subject').value,
+        tel: document.querySelector('#tel').value,
+        message: document.querySelector('#message').value
+    };
+
+    let serviceID = "service_y1nba1c";
+    let templateID = "template_m4l1f1r";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res=> {
+            alert("Email send succesfully !<br>Thank you");
+        })
+        .catch(err => {
+            alert("Failed... Try again later please or mail me to : antoine.ohl@gmail.com or my socials !")
+        });
+}
