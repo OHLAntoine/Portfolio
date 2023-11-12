@@ -137,7 +137,7 @@ function sendEmail(){
 
     emailjs.send(serviceID, templateID, params)
         .then(res=> {
-            alert("Email send succesfully !<br>Thank you");
+            alert("Email send succesfully ! Thank you");
         })
         .catch(err => {
             alert("Failed... Try again later please or mail me to : antoine.ohl@gmail.com or my socials !")
