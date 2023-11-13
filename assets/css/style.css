@@ -52,6 +52,7 @@ body {
 /* Buttons */
 
 .outline-btn_blue {
+    max-width: fit-content;
     color: var(--light_blue-);
     border: var(--light_blue-) solid 1px;
     background: linear-gradient(90deg, var(--dark_blue-) 0% 50%, var(--light_blue-) 50% 100%);
@@ -64,6 +65,7 @@ body {
 }
 
 .btn_blue {
+    max-width: fit-content;
     color: var(--dark_blue-);
     border: var(--light_blue-) solid 1px;
     background: linear-gradient(90deg, var(--light_blue-) 0% 50%, var(--dark_blue-) 50% 100%);
@@ -147,7 +149,7 @@ header {
     font-size: xx-large;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 991px) {
     .my-presentation {
         text-align: center;
         display: flex;
@@ -169,6 +171,15 @@ header {
     border: 2px solid var(--light_blue-);
     object-fit: contain;
     object-position: top;
+}
+
+@media (max-width: 576px) {
+    .buttons_about {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Education */

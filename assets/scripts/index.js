@@ -137,9 +137,11 @@ function sendEmail(){
 
     emailjs.send(serviceID, templateID, params)
         .then(res=> {
-            alert("Email send succesfully ! Thank you");
+            // alert("Email send succesfully ! Thank you");
+            new bootstrap.Modal(document.querySelector("#mySuccessModal")).show();
         })
         .catch(err => {
-            alert("Failed... Try again later please or mail me to : antoine.ohl@gmail.com or my socials !")
+            // alert("Failed... Try again later please or mail me to : antoine.ohl@gmail.com or my socials !")
+            new bootstrap.Modal(document.querySelector("#myFailedModal")).show();
         });
 }
